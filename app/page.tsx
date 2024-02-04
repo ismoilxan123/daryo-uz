@@ -1,95 +1,103 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+const page = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <div>
+      <div className="hero">
+        <h2>|</h2>
+        <h1 className="hero__title">So'ngi yangiliklar</h1>
+      </div>
+      <div className="main__news">
+        <div className="main__news--one">
+          <div className="main__img">
+            <img
+              width="367"
+              src="https://daryo.uz/static/2024/02/thumb-65bf7690a96c8.jpg"
+              alt="img"
             />
-          </a>
+            <h3 className="img__absolute">Mahalliy</h3>
+          </div>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            href={"about"}
+          >
+            <h2>Lisichansk o'qqa tutilishi oqibatida 28 kishi halok bo'ldi</h2>
+          </Link>
+          <h5>BUGUN 14:15</h5>
+          <p>
+            Vayronalar ostida 40 ga yaqin odam bo'lishi mumkin, ularni qidirish
+            va qutqarish ishlari davom etmoqda
+          </p>
+        </div>
+        <div className="main__news--one">
+          <div className="main__img">
+            <img
+              width="367"
+              src="https://daryo.uz/static/2024/02/65bf64d7da414.jpg"
+              alt="img"
+            />
+            <h3 className="img__absolute">Mahalliy</h3>
+          </div>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            href={"about"}
+          >
+            <h2>
+              O'zbekiston aholisining qancha qismi mehnatga layoqatligi e'lon
+              qilindi
+            </h2>
+          </Link>
+          <h5>BUGUN 16:15</h5>
+          <p>
+            Statistika agentligi aholining yosh guruhlari bo'yicha tarkibini
+            e'lon qildi
+          </p>
+        </div>
+        <div className="main__news--one">
+          <div className="main__img">
+            <img
+              width="367"
+              src="https://daryo.uz/static/2024/02/65bf57e31fd23.jpg"
+              alt="img"
+            />
+            <h3 className="img__absolute">Sport</h3>
+          </div>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            href={"about"}
+          >
+            <h2>Rasman: Jaloliddin Masharipov - 'ISTIQILOL</h2>
+          </Link>
+          <h5>BUGUN 14:24</h5>
+          <p>Jaloliddin Eron klubi bilan shartnoma imzoladi</p>
+        </div>
+        <div className="main__news--one">
+          <div className="main__img">
+            <img
+              width="367"
+              src="https://daryo.uz/static/2024/02/65bf5317bbfd2.jpg"
+              alt="img"
+            />
+            <h3 className="img__absolute">Mahalliy</h3>
+          </div>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            href={"about"}
+          >
+            <h2>
+              Toshkent atrofidagi hududlardan metro bekatlarigacha express
+              aftobuslari qo'yilishi kutilmoqda
+            </h2>
+          </Link>
+          <h5>BUGUN 14:15</h5>
+          <p>
+            Jumladan, “Nazarbek” hududidan Chorsu va Paxtakor metro bekatigacha
+            avtobus yo'nalishini tashkil qilish nazarda tutilgan
+          </p>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default page;
